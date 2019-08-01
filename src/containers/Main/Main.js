@@ -8,7 +8,7 @@ class Main extends Component {
     items: null,
     loading: true,
   };
-  // Lifecycle hook который вызывается сразу после инициализации и ренлеринга
+  // Lifecycle hook который вызывается сразу после инициализации и рендеринга
   componentDidMount() {
     //Переменная содержащая ссылку на api
     const url =
