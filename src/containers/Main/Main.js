@@ -38,13 +38,13 @@ class Main extends Component {
   }
   //Метод для кнопки убывания
   descending = () => {
-    //Сортирую с помощью lodash по убыванию
+    //Сортирую с помощью lodash по убыванию параметра Даты создания
     const items = _.orderBy(this.state.items, ["creation_date"], ["desc"]);
     this.setState({ items: items });
   };
   //Метод для кнопки возрастания
   ascending = () => {
-    //Сортирую с помощью lodash по возрастанию
+    //Сортирую с помощью lodash по возрастанию параметра Даты Создания
     const items = _.orderBy(this.state.items, ["creation_date"], ["asc"]);
     this.setState({ items: items });
   };
